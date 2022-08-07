@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head> 
+    <title>Peg Pag - {{titulo}}</title>
+</head>
+<body>
+    <div>
+        <h2>{{titulo}}</h2>
+</head>
+<body>
+    <h3>Anúncios de hoje!!!</h3>
+    <br>
+    <div>
+        <h3>Selecione uma categoria para visualizar os anúncios</h3>
+        <ul>
+            <li>
+                <a href="#">Utilidades domésticas</a></li>
+            <li>
+                <a href="#">Brinquedos</a></li>
+            <li>
+                <a href="#">Jardinagem</a></li>
+            <li>
+                <a href="#">Material elétrico</a></li>
+            <li>
+                <a href="#">Diversos</a></li>
+        </ul>
+        <br>
+    <h3>Ou veja os nosso melhores anúncios publicados:</h3>
+    <br>
+    <table border="2">
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+            <th>Seu favorito?</th>
+            <th>Mais</th>
+        </tr>
+            <td>Ralador para legumes</td>
+            <td>R$ 21,00</td>
+            <td>Utilidades domésticas</td>
+            <td><a href={{url_for("adicfavoritos")}}>Favorito</a></td>
+            <td><a href={{url_for("perguntar")}}>Pergunte ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Balde plástico 20 litros</td>
+            <td>R$ 53.000,00</td>
+            <td>Utilidades domésticas</td>
+            <td><a href={{url_for("adicfavoritos")}}>Favorito</a></td>
+            <td><a href={{url_for("perguntar")}}>Pergunte ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Pedra branca decorativa</td>
+            <td>R$ 90,00</td>
+            <td>Jardinagem</td>
+            <td><a href={{url_for("adicfavoritos")}}>Favorito</a></td>
+            <td><a href={{url_for("perguntar")}}>Pergunte ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Jogo de damas plástico</td>
+            <td>R$ 30,00</td>
+            <td>Brinquedos</td>
+            <td><a href={{url_for("adicfavoritos")}}>Favorito</a></td>
+            <td><a href={{url_for("perguntar")}}>Pergunte ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Vaso decorativo</td>
+            <td>R$ 95,00</td>
+            <td>Diversos</td>
+            <td><a href={{url_for("adicfavoritos")}}>Favorito</a></td>
+            <td><a href={{url_for("perguntar")}}>Pergunte ao vendedor</a></td>
+        </tr>
+    </table>
+       
+</div>  
+</body>
+</html>
